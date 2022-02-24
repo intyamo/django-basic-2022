@@ -1,4 +1,4 @@
-<!--templates/posts/all.html-->
+<!--templates/posts/single_post.html-->
 {% extends 'base.html' %}
 
 {% block content %}
@@ -6,5 +6,7 @@
   <h2>{{ post.title }}</h2>
   <p>{{ post.author.username }} | {{ post.date }}</p>
   <p>{{ post.text }}</p>
+  <hr>
+  <a href="{% url 'post_update' post.id %}">Edit</a> | <a href="{% url 'post_delete' post.id %}">Delete</a>
 </div>
 {% endblock content %}

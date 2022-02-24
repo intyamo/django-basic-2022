@@ -1,4 +1,5 @@
 from django.db import models
+from django.urls import reverse
 
 
 class Post(models.Model):
@@ -9,3 +10,6 @@ class Post(models.Model):
 
     def __str__(self):
         return '\n'.join((self.title, f'{self.author.username} | {self.date}', '\n', self.text[:140]))
+
+    def get_absolute_url(self):
+        return reverse('single_post', args=[str(self.id)])
