@@ -7,7 +7,7 @@
 <ul>
   {% for post in all_posts_list %}
   <div>
-    <h2><a href="{% url 'single_post' post.id  %}">{{ post.title }}</a></h2>
+    <h2><a href="{{ post.get_absolute_url }}">{{ post.title }}</a></h2>
     <p>{{ post.author.username }} | {{ post.date }}</p>
     <p>{{ post.text }}</p>
   </div>
