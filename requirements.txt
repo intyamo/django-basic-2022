@@ -73,3 +73,6 @@ pytz==2021.3; python_version >= "3.6" \
 sqlparse==0.4.2; python_version >= "3.6" \
     --hash=sha256:48719e356bb8b42991bdbb1e8b83223757b93789c00910a616a071910ca4a64d \
     --hash=sha256:0c00730c74263a94e5a9919ade150dfc3b19c574389985446148402998287dae
+whitenoise==6.0.0; python_version >= "3.7" \
+    --hash=sha256:5a4aff543ee860fbe40d743e556adf92ccd41b7df45697cae074afdf657056b9 \
+    --hash=sha256:08c42bc535f9777eea1a599289d9433f081921f97887eaf6f559446b2a080374
